@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moex-network"
+version = "1.0.0"
+description = "Correlation-network (MST) analysis of Moscow Exchange equities"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Bulat Saitbatalov" }]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "scipy>=1.11",
+    "networkx>=3.2",
+    "matplotlib>=3.8",
+    "apimoex>=1.4",
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "jupyter", "nbconvert", "ipykernel"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
