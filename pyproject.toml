@@ -7,7 +7,6 @@ name = "moex-network"
 version = "1.0.0"
 description = "Correlation-network (MST) analysis of Moscow Exchange equities"
 readme = "README.md"
-license = "MIT"
 authors = [{ name = "Bulat Saitbatalov" }]
 requires-python = ">=3.10"
 dependencies = [

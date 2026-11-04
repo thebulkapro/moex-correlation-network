@@ -1,7 +1,6 @@
 # MOEX Correlation Network
 
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
-![License: MIT](https://img.shields.io/badge/license-MIT-green)
 
 This project analyses how **44 Moscow Exchange shares** (2023–2026) move together, using
 graph theory. Daily returns are turned into a correlation network, which is then reduced
@@ -131,7 +130,3 @@ $d_{ij} = \sqrt{2(1-\rho_{ij})}$. По этой метрике строится 
 
 Отдельно стоит отметить исправление данных: цены MOEX не скорректированы на сплиты
 GMKN, VTBR, BELU и PLZL. Без поправки эти бумаги выглядели почти некоррелированными с рынком.
-
-## License
-
-[MIT](LICENSE)
