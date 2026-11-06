@@ -1,5 +1,6 @@
 # MOEX Correlation Network
 
+[![tests](https://github.com/thebulkapro/moex-correlation-network/actions/workflows/tests.yml/badge.svg)](https://github.com/thebulkapro/moex-correlation-network/actions/workflows/tests.yml)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 
 This project analyses how **44 Moscow Exchange shares** (2023–2026) move together, using
@@ -69,7 +70,8 @@ and colour show the correlation between the two shares.</sub>
 │   ├── mst.py           # union-find + Kruskal
 │   ├── metrics.py       # topological metrics, sector statistics
 │   └── plotting.py      # figures
-└── tests/               # pytest: Kruskal vs NetworkX, distance, cleaning
+├── tests/               # pytest: Kruskal vs NetworkX, distance, cleaning
+└── .github/workflows/   # CI: runs pytest on every push
 ```
 
 ## Quick start
